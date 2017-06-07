@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPattern.Pages.ArticleDetailsPage
+namespace BasicFunctionalityTests.Pages.ArticleDetailsPage
 {
     public partial class ArticleDetailsPage
     {

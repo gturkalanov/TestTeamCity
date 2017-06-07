@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DesignPattern.Pages.ArticleDeletePage
+namespace BasicFunctionalityTests.Pages.ArticleDeletePage
 {
     public static class ArticleDeletePageAsserter
     {

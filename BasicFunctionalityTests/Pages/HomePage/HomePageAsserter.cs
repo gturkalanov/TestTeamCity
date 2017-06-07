@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace ProjectTests.Pages.HomePage
+namespace BasicFunctionalityTests.Pages.HomePage
 {
     public static class HomePageAsserter
     {   //First Commit
