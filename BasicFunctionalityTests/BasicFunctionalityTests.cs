@@ -111,7 +111,7 @@ namespace BasicFunctionalityTests
             loginPage.ClickLoginButtonSubmit();
             loginPage.AssertLoginPasswordIsIncorrect();
         }
-*/
+
         [Test, Order(1)]
         public void CreateArticleWithTitleAndContent()
         {
