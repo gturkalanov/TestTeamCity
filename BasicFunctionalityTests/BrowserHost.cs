@@ -11,7 +11,7 @@ namespace BasicFunctionalityTests
         static BrowserHost()
         {
             //Instance.Run("Blog", 60639, w => w.WithRemoteWebDriver(BrowserFactory.Chrome));
-            Instance.Run("Blog", 60634);
+            Instance.Run("Blog", 60640);
             //RootUrl = Instance.Application.Browser.Url;
         }
 
