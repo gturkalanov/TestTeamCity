@@ -115,6 +115,10 @@ namespace BasicFunctionalityTests
         [Test, Order(1)]
         public void CreateArticleWithTitleAndContent()
         {
+            var relative = System.AppDomain.CurrentDomain.BaseDirectory;
+            string filename = ConfigurationManager.AppSettings["Logs"] + TestContext.CurrentContext.Test.Name + ".txt";
+            var screenshot = ((ITakesScreenshot)this.driver).GetScreenshot();
+            screenshot.SaveAsFile(relative + filename + TestContext.CurrentContext.Test.Name + "GOSHO.jpg", ScreenshotImageFormat.Jpeg);
             var createPage = new CreatePage(driver);
             createPage.LogIn();
             createPage.NavigateTo();
@@ -179,9 +183,13 @@ namespace BasicFunctionalityTests
         [Test, Order(0)]
         public void ACreateTestUserTest()
         {
+           
             var changePasswordPage = new ChangePasswordPage(driver);
-
+            var screenshot = ((ITakesScreenshot)this.driver).GetScreenshot();
+            screenshot.SaveAsFile("C:\\gt.jpg", ScreenshotImageFormat.Jpeg);
             changePasswordPage.Register();
+            var screenshot2 = ((ITakesScreenshot)this.driver).GetScreenshot();
+            screenshot2.SaveAsFile("C:\\gt2.jpg", ScreenshotImageFormat.Jpeg);
         }
         /*
       
